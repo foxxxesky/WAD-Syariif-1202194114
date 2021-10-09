@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous" />
+    <title>Klinik EAD</title>
+  </head>
+  <body>
+    <!-- Nav Bar -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <div class="container-fluid col-10">
+        <div class="pe-3">
+          <img src="img/logo-ead.png" alt="logo-ead" width="170px" height="45px" />
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#layanan">Layanan</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#form">Registrasi</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Nav Bar -->
+
+    <!-- Home -->
+
+    <section style="background-color: #e0e0e0" id="home">
+      <div class="jumbotron jumbotron-fluid pt-5 pb-5">
+        <div class="container text-center pt-4">
+          <iframe src="http://bit.ly/VideoEAD2020" frameborder="0" width="400px" height="250px"></iframe>
+          <h1 class="fw-normal">Klinik EAD</h1>
+          <p>Klinik EAD merupakan klinik yang menyediakan layanan tes Covid-19</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Home -->
+
+    <!-- About -->
+
+    <section class="pt-5 pb-5" id="about">
+      <h1 class="fw-normal text-center pt-3">Tentang Kami</h1>
+      <div class="row justify-content-center pt-3">
+        <div class="col-4">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur hic minus sint et blanditiis esse non veritatis debitis ad id beatae unde, doloribus tempora excepturi placeat aliquid accusantium aspernatur fugit.
+        </div>
+        <div class="col-4">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima minus placeat perferendis. Eaque saepe repudiandae fugit doloribus quod nesciunt! Inventore totam maiores laudantium laboriosam iste sed iusto ipsum nihil expedita,
+          dolores accusamus officia iure nam fugit quod ad cumque quos.
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+
+    <!-- Jenis Tes -->
+
+    <section class="pt-5 pb-5" id="layanan" style="background-color: #e0e0e0">
+      <h1 class="text-center fw-normal pt-3">Jenis Test</h1>
+      <div class="row justify-content-center pt-3">
+        <div class="col-3">
+          <div class="card" style="width: 18rem">
+            <img src="img/antigen.jpg" class="card-img-top" alt="antigen" />
+            <div class="card-body">
+              <h5 class="card-title">Tes Antigen</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque aut ea dolore repudiandae accusamus quasi.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="card" style="width: 18rem">
+            <img src="img/pcr.jpg" class="card-img-top" alt="pcr" />
+            <div class="card-body">
+              <h5 class="card-title">Tes PCR</h5>
+              <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam eveniet cum esse qui nostrum quas!</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="card" style="width: 18rem">
+            <img src="img/antibody.jpg" class="card-img-top" alt="antibody" />
+            <div class="card-body">
+              <h5 class="card-title">Tes Antibodi</h5>
+              <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis pariatur, omnis obcaecati esse corporis sit?.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Jenis Tes -->
+
+    <!-- Form -->
+
+    <section class="pt-5 pb-5" id="form">
+      <h1 class="fw-normal text-center">Registrasi</h1>
+      <div class="row justify-content-center">
+        <div class="col-6 pt-4">
+          <form action="">
+            <div class="row mb-3">
+              <label for="nama" class="col-sm-4 col-form-label">Nama</label>
+              <div class="col-sm-8">
+                <input type="text" class="form-control" id="nama" placeholder="Nama anda..." />
+              </div>
+            </div>
+            <div class="row mb-3">
+              <label for="nohp" class="col-sm-4 col-form-label">Nomor Hp</label>
+              <div class="col-sm-8">
+                <input type="text" class="form-control" id="nohp" />
+              </div>
+            </div>
+            <div class="row mb-3">
+              <label for="nohp" class="col-sm-4 col-form-label">Riwayat Penyakit</label>
+              <div class="col-sm-8">
+                <textarea class="form-control" name="riwayat_penyakit" id="riwayat" rows="3"></textarea>
+              </div>
+            </div>
+            <fieldset class="row mb-3">
+              <legend class="col-form-label col-sm-4 pt-0">Pembayaran</legend>
+              <div class="col-sm-8">
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" />
+                  <label class="form-check-label" for="inlineRadio1">Tunai</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" />
+                  <label class="form-check-label" for="inlineRadio2">Transfer</label>
+                </div>
+              </div>
+            </fieldset>
+            <div class="row mb-3">
+              <label for="jenis_test" class="col-sm-4 col-form-label">Jenis Test</label>
+              <div class="col-sm-8">
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>PCR</option>
+                  <option value="1">Antigen</option>
+                  <option value="2">Antibodi</option>
+                </select>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Kirim</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Form -->
+  </body>
+  <footer>
+    <p class="text-center">Dibuat oleh Syariif Abdurrahman Bathik_1202194114</p>
+  </footer>
+</html>
