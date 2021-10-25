@@ -90,11 +90,11 @@ $reservations = array("Nusantara Hall", "Garuda Hall", "Gedung Serba Guna");
                         <option value="" disable selected>--- Select Type ---</option>
                         <?php
                             if (isset($_GET['reservations'])) {            
-                                if ($_GET['reservations'] == $reservations[1]) {
+                                if ($_GET['reservations'] == $reservations[0]) {
                                     ?><option selected="selected" value="Nusantara Hall" name="nusantara">Nusantara Hall</option><?php
-                                } elseif ($_GET['reservations'] == $reservations[2]) {
+                                } elseif ($_GET['reservations'] == $reservations[1]) {
                                     ?><option selected="selected" value="Garuda Hall" name="garuda">Garuda Hall</option><?php
-                                } elseif ($_GET['reservations'] == $reservations[3]) {
+                                } elseif ($_GET['reservations'] == $reservations[2]) {
                                     ?><option selected="selected" value="Gedung Serba Guna" name="gsg">Gedung Serba Guna</option><?php
                                 } 
                             } else {

@@ -2,8 +2,8 @@
 
 $orgdate = $_POST['date'] . " " . $_POST['time'];
 
-$checkin = date("d-m-Y H:i:s", strtotime($orgday));
-$checkout = date("d-m-Y H:i:s", (strtotime($orgday) + 60 * 60 * $_POST['duration']));
+$checkin = date("d-m-Y H:i:s", strtotime($orgdate));
+$checkout = date("d-m-Y H:i:s", (strtotime($orgdate) + 60 * 60 * $_POST['duration']));
 
 $hallprice = array("nusantara" => 2000, "garuda" => 1000, "gsg" => 500);
 
@@ -81,7 +81,7 @@ if (isset($_POST['service'])) {
                 </thead>
                 <tbody>
                     <tr>
-                        <th scope="row"><?= rund() ?></th>
+                        <th scope="row"><?= rand() ?></th>
                         <td><?= $_POST["nama"] ?></td>
                         <td><?= $checkin ?></td>
                         <td><?= $checkout ?></td>
@@ -107,7 +107,7 @@ if (isset($_POST['service'])) {
                                     echo $price1 + $addprice;
                                 } elseif ($reservations == "Nusantara Hall") {
                                     $price1 = $hallprice['nusantara']*$_POST["duration"];
-                                    echo $price1;
+                                    echo $price1 + $addprice;
                                 } elseif ($reservations == "Gedung Serba Guna") {
                                     $price1 = $hallprice['gsg']*$_POST["duration"];
                                     echo $price1 + $addprice;
