@@ -14,28 +14,31 @@ $reservations = array("Nusantara Hall", "Garuda Hall", "Gedung Serba Guna");
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <title>ESD Venue</title>
     <style>
-        #hover:hover {
-            background-color: white;
-        }
+    #hover:hover {
+        background-color: white;
+    }
     </style>
 </head>
+
 <body>
     <!-- Nav -->
 
     <ul class="nav justify-content-center bg-dark">
         <li class="nav-item">
-        <a class="nav-link text-secondary" id="hover" href="../index.php">Home</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link text-secondary" id="hover" href="#">Booking</a>
-    </li>
+            <a class="nav-link text-secondary" id="hover" href="../index.php">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-secondary" id="hover" href="#">Booking</a>
+        </li>
     </ul>
 
     <!-- Nav -->
@@ -51,7 +54,7 @@ $reservations = array("Nusantara Hall", "Garuda Hall", "Gedung Serba Guna");
     <!-- Text -->
 
     <!-- left pict -->
-    
+
     <div class="row justify-content-center pt-3">
         <div class="col-5 pt-5">
             <div class="pt-5">
@@ -91,11 +94,14 @@ $reservations = array("Nusantara Hall", "Garuda Hall", "Gedung Serba Guna");
                         <?php
                             if (isset($_GET['reservations'])) {            
                                 if ($_GET['reservations'] == $reservations[0]) {
-                                    ?><option selected="selected" value="Nusantara Hall" name="nusantara">Nusantara Hall</option><?php
+                                    ?><option selected="selected" value="Nusantara Hall" name="nusantara">Nusantara
+                            Hall</option><?php
                                 } elseif ($_GET['reservations'] == $reservations[1]) {
-                                    ?><option selected="selected" value="Garuda Hall" name="garuda">Garuda Hall</option><?php
-                                } elseif ($_GET['reservations'] == $reservations[2]) {
-                                    ?><option selected="selected" value="Gedung Serba Guna" name="gsg">Gedung Serba Guna</option><?php
+                                    ?><option selected="selected" value="Garuda Hall" name="garuda">Garuda Hall
+                        </option><?php
+                                } else {
+                                    ?><option selected="selected" value="Gedung Serba Guna" name="gsg">Gedung Serba
+                            Guna</option><?php
                                 } 
                             } else {
                                 ?><option value="Nusantara Hall" name="nusantara">Nusantara Hall</option><?php
@@ -132,7 +138,7 @@ $reservations = array("Nusantara Hall", "Garuda Hall", "Gedung Serba Guna");
     </div>
 
     <!-- left pict -->
-    
+
 </body>
 
 <footer>
@@ -140,7 +146,9 @@ $reservations = array("Nusantara Hall", "Garuda Hall", "Gedung Serba Guna");
         <p class="text-center">Dibuat oleh Syariif Abdurrahman Bathik_1202194114</p>
     </div>
 </footer>
+
 </html>
-    </div>
+</div>
 </footer>
+
 </html>
