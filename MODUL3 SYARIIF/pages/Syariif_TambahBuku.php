@@ -85,117 +85,114 @@ if (isset($_POST["submit"])) {
         <div class="col-8">
             <div class="card">
                 <div class="card-body">
-                    <h3 class="card-title text-center fw-bold">Tambah Data Buku</h4>
-                        <form action="" method="POST" enctype="multipart/form-data">
-                            <!-- Judul -->
-                            <div class="mb-3">
-                                <label for="judul_buku" class="form-label fw-bold">Judul Buku</label>
-                                <input type="text" class="form-control" name="judul_buku" id="judul_buku"
-                                    placeholder="Contoh: Pemrograman Web Bersama EAD" required>
-                            </div>
-                            <!-- Judul -->
+                    <h3 class="card-title text-center fw-bold">Tambah Data Buku</h3>
+                    <form action="" method="POST" enctype="multipart/form-data">
+                        <!-- Judul -->
+                        <div class="mb-3">
+                            <label for="judul_buku" class="form-label fw-bold">Judul Buku</label>
+                            <input type="text" class="form-control" name="judul_buku" id="judul_buku"
+                                placeholder="Contoh: Pemrograman Web Bersama EAD" required>
+                        </div>
+                        <!-- Judul -->
 
-                            <!-- Penulis -->
-                            <div class="mb-3">
-                                <label for="penulis" class="form-label fw-bold">Penulis</label>
-                                <input type="text" class="form-control" value="<?= $user ?>" id="penulis" name="penulis"
-                                    readonly>
-                            </div>
-                            <!-- Penulis -->
+                        <!-- Penulis -->
+                        <div class="mb-3">
+                            <label for="penulis" class="form-label fw-bold">Penulis</label>
+                            <input type="text" class="form-control" value="<?= $user ?>" id="penulis" name="penulis"
+                                readonly>
+                        </div>
+                        <!-- Penulis -->
 
-                            <!-- Tahun Terbit -->
-                            <div class="mb-3">
-                                <label for="tahun_terbit" class="form-label fw-bold">Tahun Terbit</label>
-                                <input type="text" class="form-control" name="tahun_terbit" id="tahun_terbit"
-                                    placeholder="Contoh: 1990" required>
-                            </div>
-                            <!-- Tahun Terbit -->
+                        <!-- Tahun Terbit -->
+                        <div class="mb-3">
+                            <label for="tahun_terbit" class="form-label fw-bold">Tahun Terbit</label>
+                            <input type="text" class="form-control" name="tahun_terbit" id="tahun_terbit"
+                                placeholder="Contoh: 1990" required>
+                        </div>
+                        <!-- Tahun Terbit -->
 
-                            <!-- Desc -->
-                            <div class="mb-3">
-                                <label for="deskripsi" class="form-label fw-bold">Deskripsi</label>
-                                <textarea class="form-control" name="deskripsi" id="deskripsi" rows="3"
-                                    placeholder="Contoh: Buku ini menjelaskan tentang ..." required></textarea>
-                            </div>
-                            <!-- Desc -->
+                        <!-- Desc -->
+                        <div class="mb-3">
+                            <label for="deskripsi" class="form-label fw-bold">Deskripsi</label>
+                            <textarea class="form-control" name="deskripsi" id="deskripsi" rows="3"
+                                placeholder="Contoh: Buku ini menjelaskan tentang ..." required></textarea>
+                        </div>
+                        <!-- Desc -->
 
-                            <!-- Bahasa -->
-                            <div class="mb-3">
-                                <!-- Indo -->
-                                <label for="bahasa" class="form-label fw-bold pe-3">Bahasa</label>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="bahasa[]" id="bahasa"
-                                        value="Indonesia">
-                                    <label class="form-check-label" for="Indonesia">Indonesia</label>
-                                </div>
-                                <!-- Lainnya -->
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="bahasa[]" id="bahasa"
-                                        value="Lainnnya">
-                                    <label class="form-check-label" for="Lainnnya">Lainnnya</label>
-                                </div>
+                        <!-- Bahasa -->
+                        <div class="mb-3">
+                            <!-- Indo -->
+                            <label for="bahasa" class="form-label fw-bold pe-3">Bahasa</label>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="bahasa[]" id="bahasa"
+                                    value="Indonesia">
+                                <label class="form-check-label" for="Indonesia">Indonesia</label>
                             </div>
-                            <!-- Bahasa -->
+                            <!-- Lainnya -->
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="bahasa[]" id="bahasa"
+                                    value="Lainnnya">
+                                <label class="form-check-label" for="Lainnnya">Lainnnya</label>
+                            </div>
+                        </div>
+                        <!-- Bahasa -->
 
-                            <!-- Tag -->
-                            <div class="mb-3">
-                                <label for="tag" class="form-label fw-bold pe-3">Tag</label>
-                                <!-- Pemrograman -->
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" name="tag[]" id="tag"
-                                        value="Pemrograman">
-                                    <label class="form-check-label" for="Pemrograman">Pemrograman</label>
-                                </div>
-                                <!-- Website -->
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" name="tag[]" id="tag"
-                                        value="Website">
-                                    <label class="form-check-label" for="Website">Website</label>
-                                </div>
-                                <!-- Java -->
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" name="tag[]" id="tag" value="Java">
-                                    <label class="form-check-label" for="Java">Java</label>
-                                </div>
-                                <!-- OOP -->
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" name="tag[]" id="tag" value="OOP">
-                                    <label class="form-check-label" for="OOP">OOP</label>
-                                </div>
-                                <!-- MVC -->
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" name="tag[]" id="tag" value="MVC">
-                                    <label class="form-check-label" for="MVC">MVC</label>
-                                </div>
-                                <!-- Kalkulus -->
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" name="tag[]" id="tag"
-                                        value="Kalkulus">
-                                    <label class="form-check-label" for="Kalkulus">Kalkulus</label>
-                                </div>
-                                <!-- Lainnya -->
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" name="tag[]" id="tag"
-                                        value="Lainnya">
-                                    <label class="form-check-label" for="Lainnya">Lainnya</label>
-                                </div>
+                        <!-- Tag -->
+                        <div class="mb-3">
+                            <label for="tag" class="form-label fw-bold pe-3">Tag</label>
+                            <!-- Pemrograman -->
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" name="tag[]" id="tag"
+                                    value="Pemrograman">
+                                <label class="form-check-label" for="Pemrograman">Pemrograman</label>
                             </div>
-                            <!-- Tag -->
+                            <!-- Website -->
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" name="tag[]" id="tag" value="Website">
+                                <label class="form-check-label" for="Website">Website</label>
+                            </div>
+                            <!-- Java -->
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" name="tag[]" id="tag" value="Java">
+                                <label class="form-check-label" for="Java">Java</label>
+                            </div>
+                            <!-- OOP -->
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" name="tag[]" id="tag" value="OOP">
+                                <label class="form-check-label" for="OOP">OOP</label>
+                            </div>
+                            <!-- MVC -->
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" name="tag[]" id="tag" value="MVC">
+                                <label class="form-check-label" for="MVC">MVC</label>
+                            </div>
+                            <!-- Kalkulus -->
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" name="tag[]" id="tag" value="Kalkulus">
+                                <label class="form-check-label" for="Kalkulus">Kalkulus</label>
+                            </div>
+                            <!-- Lainnya -->
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" name="tag[]" id="tag" value="Lainnya">
+                                <label class="form-check-label" for="Lainnya">Lainnya</label>
+                            </div>
+                        </div>
+                        <!-- Tag -->
 
-                            <!-- Gambar -->
-                            <div class="mb-3">
-                                <label for="gambar" class="form-label fw-bold">Gambar</label>
-                                <input class="form-control" type="file" name="gambar" id="gambar">
-                            </div>
-                            <!-- Gambar -->
+                        <!-- Gambar -->
+                        <div class="mb-3">
+                            <label for="gambar" class="form-label fw-bold">Gambar</label>
+                            <input class="form-control" type="file" name="gambar" id="gambar">
+                        </div>
+                        <!-- Gambar -->
 
-                            <!-- Button -->
-                            <div class="text-center">
-                                <button type="submit" name="submit" class="btn btn-primary" style="width: 20rem;">+
-                                    TAMBAH</button>
-                            </div>
-                            <!-- Button -->
-                        </form>
+                        <!-- Button -->
+                        <div class="text-center">
+                            <button type="submit" name="submit" class="btn btn-primary" style="width: 20rem;">+
+                                TAMBAH</button>
+                        </div>
+                        <!-- Button -->
+                    </form>
 
                 </div>
             </div>

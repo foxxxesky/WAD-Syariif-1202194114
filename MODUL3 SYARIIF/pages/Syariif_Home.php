@@ -16,6 +16,7 @@ function query($query) {
 
 // select data from querry (fetch)
 $books = query("SELECT * FROM buku_table");
+var_dump($books);
 
 // Cek
 $cek = mysqli_query($connect, "SELECT * FROM buku_table");
