@@ -26,9 +26,6 @@ if (isset($_POST["submit"])) {
     $deskripsi = $_POST["deskripsi"];
     $bahasa = implode(', ', $_POST['bahasa']);
     $tag = implode(', ', $_POST['tag']);
-    $gambar = $_FILES['gambar']['name'];
-    $source_gbr = $_FILES['gambar']['tmp_name'];
-    $folder = '../img/uploads_img/';
 
     move_uploaded_file($source_gbr, $folder.$gambar);
 
@@ -37,7 +34,6 @@ if (isset($_POST["submit"])) {
             judul_buku = '$judul',
             tahun_terbit = $tahun,
             deskripsi = '$deskripsi',
-            gambar = '$gambar',
             tag = '$tag',
             bahasa = '$bahasa'
             WHERE id_buku = $id
@@ -255,14 +251,6 @@ alert('Failed!!!')
                                 </div>
                             </div>
                             <!-- Tag -->
-
-                            <!-- Gambar -->
-                            <div class="mb-3">
-                                <label for="gambar" class="form-label fw-bold">Gambar</label>
-                                <input class="form-control" type="file" name="gambar" id="gambar">
-                            </div>
-                            <!-- Gambar -->
-
                             <!-- Footer -->
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
