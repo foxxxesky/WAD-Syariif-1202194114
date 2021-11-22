@@ -1,11 +1,11 @@
 <?php
 // Connect Database
-$connect = mysqli_connect("localhost","root","","modul3");
+$connect = mysqld_connect("localhost","root","","modul3");
 
 // take data from table
 function query($query) {
     global $connect;    
-    $result = mysqli_query($connect, $query);
+    $result = mysqld_query($connect, $query);
     $rows = [];
     while ($row = mysqli_fetch_assoc($result)) {
         $rows[] = $row;
@@ -15,10 +15,10 @@ function query($query) {
 }
 
 // select data from querry (fetch)
-$books = query("SELECT * FROM buku_table");
+$books = query("SELECT * FROM buku_tabel");
 
 // Cek
-$cek = mysqli_query($connect, "SELECT * FROM buku_table");
+$cek = mysqli_query($connect, "SELECT * FROM buku_tabel");
 
 $count = mysqli_num_rows($cek);
 
