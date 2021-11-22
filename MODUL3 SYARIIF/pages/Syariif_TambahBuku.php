@@ -21,7 +21,7 @@ if (isset($_POST["submit"])) {
     move_uploaded_file($source_gbr, $folder.$gambar);
 
     // query insert
-    $query = "INSERT INTO buku_table VALUES
+    $query = "INSERT TO buku_table VALUES
                 ('', '$judul', '$penulis', $tahun, '$deskripsi', '$gambar', '$tag', '$bahasa')
             ";
     mysqli_query($connect, $query);
