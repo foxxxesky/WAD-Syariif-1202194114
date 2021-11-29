@@ -114,10 +114,10 @@ require 'function.php';
                 <h5 class="card-title text-center pb-2">Login</h5>
                 <hr>
                 <?php
-                if (isset($_COOKIE["email"]) && (isset($_COOKIE["password"]))) {
+                if (isset($_COOKIES["email"]) && (isset($_COOKIES["password"]))) {
                     // Get Data
-                    $email = $_COOKIE["email"];
-                    $pwd = $_COOKIE["password"];
+                    $email = $_COOKIES["email"];
+                    $pwd = $_COOKIES["password"];
                     ?>
                 <form action="" method="POST">
                     <!-- Email -->
