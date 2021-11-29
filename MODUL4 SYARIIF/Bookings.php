@@ -2,12 +2,12 @@
 
 require 'function.php';
 
-if (!isset($_SESSION["login"])) {
+if (!isset($_SESSIONS["login"])) {
     header("location: index.php");
     exit;
 }
 
-if (isset($_SESSION['login'])) {
+if (isset($_SESSIONS['login'])) {
     // get email
     $email = $_SESSION['login'];
     $user = mysqli_query($connect, "SELECT id, nama FROM user WHERE email = '$email'");
