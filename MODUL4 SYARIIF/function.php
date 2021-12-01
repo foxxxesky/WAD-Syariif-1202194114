@@ -44,7 +44,7 @@ function register($data){
 
     // insert to database
     mysqli_query($connect, "INSERT INTO user VALUES
-        ('', '$nama', '$email', '$pwd', $nohp)
+        (NULL, '$nama', '$email', '$pwd', $nohp)
     ");
 
     return mysqli_affected_rows($connect);
@@ -68,7 +68,7 @@ function book_danau($data) {
 
     // insert to database
     mysqli_query($connect, "INSERT INTO booking VALUES
-        ('', $user_id, '$nama_tempat', '$lokasi', $harga, '$tanggal')
+        (NULL, $user_id, '$nama_tempat', '$lokasi', $harga, '$tanggal')
     ");
 
     return mysqli_affected_rows($connect);
@@ -92,7 +92,7 @@ function book_pulau($data) {
 
     // insert to database
     mysqli_query($connect, "INSERT INTO booking VALUES
-        ('', $user_id, '$nama_tempat', '$lokasi', $harga, '$tanggal')
+        (NULL, $user_id, '$nama_tempat', '$lokasi', $harga, '$tanggal')
     ");
 
     return mysqli_affected_rows($connect);
@@ -116,7 +116,7 @@ function book_cave($data) {
 
     // insert to database
     mysqli_query($connect, "INSERT INTO booking VALUES
-        ('', $user_id, '$nama_tempat', '$lokasi', $harga, '$tanggal')
+        (NULL, $user_id, '$nama_tempat', '$lokasi', $harga, '$tanggal')
     ");
 
     return mysqli_affected_rows($connect);
