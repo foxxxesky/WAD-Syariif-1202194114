@@ -177,7 +177,7 @@ require 'function.php';
                 </form>
                 <?php } ?>
 
-                <!-- Login -->
+                <!-- Registrasi -->
                 <p class="text-center pt-3">Anda Belum Punya Akun? <a href="Register.php">Register</a></p>
             </div>
         </div>
